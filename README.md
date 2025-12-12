@@ -2,8 +2,7 @@
 This will show you how to add JSX, TSX, and EJS syntax support
 
 ## Adding the language select mode
-go to `/var/www/pterodactyl/resources/scripts/` and replace `mode.ts` with the `mode.ts` within this respository
-
+go to `/var/www/pterodactyl/resources/scripts/` and replace `mode.ts` with the `mode.ts` within <a href="/resources/scripts">`/resources/scripts/`</a>
 ## Adding the syntax mode
 go to `/var/www/pterodactyl/node_modules/codemirror/mode/jsx` and replace `jsx.js` with the `jsx.js` within this respository
 
