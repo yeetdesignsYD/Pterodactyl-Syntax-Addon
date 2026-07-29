@@ -6,4 +6,13 @@ go to `/var/www/pterodactyl/resources/scripts/` and replace `mode.ts` with the `
 ## Adding the syntax mode
 go to `/var/www/pterodactyl/node_modules/codemirror/mode/jsx` and replace `jsx.js` with the `jsx.js` within <a href="/node_modules/codemirror/mode/jsx">`/node_modules/codemirror/mode/jsx`</a>
 
-then follow the <a target="_blank" href="https://pterodactyl.io/panel/1.0/updating.html">docs</a> to build the panel
+
+### How to build with the changes?
+You will need to run these commands.
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+and
+```bash
+yarn build:production
+```
