@@ -25,6 +25,7 @@ go to `/var/www/pterodactyl/node_modules/codemirror/mode/jsx` and replace `jsx.j
 
 
 ## How to build with the changes?
+For [Pterodactyl](https://pterodactyl.io)
 You will need to run these commands.
 ```bash
 export NODE_OPTIONS=--openssl-legacy-provider
@@ -32,4 +33,9 @@ export NODE_OPTIONS=--openssl-legacy-provider
 and
 ```bash
 yarn build:production
+```
+
+For [Reviactyl](https://reviactyl.app):
+```bash
+pnpm run build
 ```
