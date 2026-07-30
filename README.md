@@ -12,8 +12,8 @@ curl -fsSL https://raw.githubusercontent.com/yeetdesignsYD/Pterodactyl-Syntax-Ad
 ```
 [Reviactyl](https://reviactyl.app):
 ```bash
-curl -fsSL https://raw.githubusercontent.com/yeetdesignsYD/Pterodactyl-Syntax-Addon/refs/heads/main/resources/scripts/modes.ts -o /var/www/reviactyl/resources/scripts/modes.ts &&
-curl -fsSL https://raw.githubusercontent.com/yeetdesignsYD/Pterodactyl-Syntax-Addon/refs/heads/main/node_modules/codemirror/mode/jsx/jsx.js -o /var/www/reviactyl/node_modules/codemirror/mode/jsx/jsx.js 
+curl -fsSL https://raw.githubusercontent.com/yeetdesignsYD/Pterodactyl-Syntax-Addon/refs/heads/main/resources/scripts/modes.ts -o /var/www/reviactyl/resources/scripts/modes.ts 
+&& curl -fsSL https://raw.githubusercontent.com/yeetdesignsYD/Pterodactyl-Syntax-Addon/refs/heads/main/node_modules/codemirror/mode/jsx/jsx.js -o /var/www/reviactyl/node_modules/codemirror/mode/jsx/jsx.js 
 && cd /var/www/reviactyl 
 && pnpm run build
 ```
