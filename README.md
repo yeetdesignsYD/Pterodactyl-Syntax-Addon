@@ -35,7 +35,7 @@ and
 yarn build:production
 ```
 
-For [Reviactyl](https://reviactyl.app):
+For [Reviactyl](https://reviactyl.app) You will need to run these commands.
 ```bash
 pnpm run build
 ```
