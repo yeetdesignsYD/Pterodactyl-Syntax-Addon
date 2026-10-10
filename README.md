@@ -2,6 +2,14 @@
 This will show you how to add JSX, TSX, and EJS syntax support
 
 ## Installation
+
+Installer:
+```bash
+curl -fsSL https://raw.githubusercontent.com/yeetdesignsYD/Pterodactyl-Syntax-Addon/refs/heads/main/setup-syntax.sh -o /var/www/<YourPanelDir>
+&& bash /var/www/<YourPanelDir>/setup-syntax.sh
+```
+
+
 [Stock Pterodactyl](https://pterodactyl.io):
 ```bash
 curl -fsSL https://raw.githubusercontent.com/yeetdesignsYD/Pterodactyl-Syntax-Addon/refs/heads/main/resources/scripts/mode.ts -o /var/www/pterodactyl/resources/scripts/mode.ts 
