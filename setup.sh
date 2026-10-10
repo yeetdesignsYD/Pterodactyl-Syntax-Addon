@@ -1,6 +1,17 @@
 
+promptMsg="What is the directories name for the panel?:"
 
-read -p "What is the directories name for the panel?:" dirName
+
+echo $promptMsg
+
+read dirName
+
+if [ -z "$dirName" ]; then
+echo "No name was provided! To try again run this script."
+
+echo "EXITING..."
+exit 0
+fi
 
 options=(
 "Pterodactyl"
@@ -14,7 +25,9 @@ case $option in
      "Pterodactyl")
 curl -fsSL https://raw.githubusercontent.com/yeetdesignsYD/Pterodactyl-Syntax-Addon/refs/heads/main/resources/scripts/modes.ts -o "/var/www/${dirName}/resources/scripts/modes.ts"
 && curl -fsSL https://raw.githubusercontent.com/yeetdesignsYD/Pterodactyl-Syntax-Addon/refs/heads/main/node_modules/codemirror/mode/jsx/jsx.js -o "/var/www/${dirName}/node_modules/codemirror/mode/jsx/jsx.js" 
-&&
+&& cd "/var/www/${dirName}"
+&& export NODE_OPTIONS=--openssl-legacy-provider 
+&& yarn build:production
      ;;
      "Reviactyl")
        curl -fsSL https://raw.githubusercontent.com/yeetdesignsYD/Pterodactyl-Syntax-Addon/refs/heads/main/resources/scripts/modes.ts -o "/var/www/${dirName}/resources/scripts/modes.ts"
